@@ -1,16 +1,20 @@
 # hero_ticket_animation
 
-Hero Ticket Animation
+Hero Animation Mock for Air Ticket from Dribbble
 
-## Getting Started
+Started this project as a design mock up for Air Ticket Animation
+**Design: ** - https://dribbble.com/shots/5850392-Dynamic-boarding-pass-interface
 
-This project is a starting point for a Flutter application.
+*This project uses Dart 2*
 
-A few resources to get you started if this is your first Flutter project:
+## Video Series
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+**Part 1-** https://youtu.be/4lHDXcOXOYc
+In this video, you will see how **radial progress** is implemented with *gradient and animation*. Also, you will see how *Animated Icon* works.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+**Part 2-** https://youtu.be/r8pIgcFTjmQ
+In this video, you will see how **animated graph**. You will see how a graph is created and animated with dynamic values.
+
+
+## Screenshots
+<table style={border:"none"}><tr><td><img src="https://github.com/TechieBlossom/ticket_qr_hero_animations/blob/master/screenshots/ticket_listing.png" alt="Home Screen" width="300"/></td><td><img src="https://github.com/TechieBlossom/ticket_qr_hero_animations/blob/master/screenshots/ticket_detail.png" alt="Home Screen" width="300"/></td></tr></table>
