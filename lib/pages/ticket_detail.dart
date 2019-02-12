@@ -54,6 +54,7 @@ class TicketDetailState extends State<TicketDetail> with AfterLayoutMixin<Ticket
           Hero(
             tag: "qrcode",
             child: Stack(
+              alignment: Alignment.center,
               children: <Widget>[
                 getCorners(),
                 Image.asset(
@@ -72,11 +73,6 @@ class TicketDetailState extends State<TicketDetail> with AfterLayoutMixin<Ticket
 
   Widget getCorners() {
     return AnimatedPositioned(
-      duration: Duration(milliseconds: 300),
-      left: showCorner ? 0 : 30,
-      top: showCorner ? 0 : 30,
-      width: showCorner ? 140 : 80,
-      child: AnimatedContainer(
         duration: Duration(milliseconds: 300),
         width: showCorner ? 140 : 80,
         height: showCorner ? 140 : 80,
@@ -88,8 +84,18 @@ class TicketDetailState extends State<TicketDetail> with AfterLayoutMixin<Ticket
               mainAxisSize: showCorner ? MainAxisSize.max : MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                RotatedBox(quarterTurns: 0, child: Image.asset("images/corners.png", width: 25.0,)),
-                RotatedBox(quarterTurns: 1, child: Image.asset("images/corners.png", width: 25.0,)),
+                RotatedBox(
+                    quarterTurns: 0,
+                    child: Image.asset(
+                      "images/corners.png",
+                      width: 25.0,
+                    )),
+                RotatedBox(
+                    quarterTurns: 1,
+                    child: Image.asset(
+                      "images/corners.png",
+                      width: 25.0,
+                    )),
               ],
             ),
             Spacer(),
@@ -97,14 +103,22 @@ class TicketDetailState extends State<TicketDetail> with AfterLayoutMixin<Ticket
               mainAxisSize: showCorner ? MainAxisSize.max : MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                RotatedBox(quarterTurns: 3, child: Image.asset("images/corners.png", width: 25.0,)),
-                RotatedBox(quarterTurns: 2, child: Image.asset("images/corners.png", width: 25.0,)),
+                RotatedBox(
+                    quarterTurns: 3,
+                    child: Image.asset(
+                      "images/corners.png",
+                      width: 25.0,
+                    )),
+                RotatedBox(
+                    quarterTurns: 2,
+                    child: Image.asset(
+                      "images/corners.png",
+                      width: 25.0,
+                    )),
               ],
             ),
           ],
-        ),
-      ),
-    );
+        ));
   }
 
   @override
@@ -123,4 +137,3 @@ class TicketDetailState extends State<TicketDetail> with AfterLayoutMixin<Ticket
     });
   }
 }
-
